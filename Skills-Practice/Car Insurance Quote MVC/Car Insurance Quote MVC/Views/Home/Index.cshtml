@@ -1,0 +1,63 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+@using (Html.BeginForm("Quote", "Home", FormMethod.Post))
+{
+    <div class="card no-gutters bg-dark">
+        <div class="card-header bg-info">
+            <h3>Quote Me!</h3>
+        </div>
+        <div class="card-body flex-fill">
+            <div class="row no-gutters">
+                <div class="card col m-4">
+                    <div class="card-header bg-info">
+                        <h5>Personal Information</h5>
+                    </div>
+                    <div class="card-body">
+                        <input class="mb-2 bg-light col" type="text" name="fName" placeholder="First Name">
+                        <input class="mb-2 bg-light col" type="text" name="lName" placeholder="Last Name">
+                        <input class="mb-2 bg-light col" type="email" name="email" placeholder="Email Address">
+                        <p class="mb-0">Enter your date of birth:</p>
+                        <input class="bg-light text-black-50 col" type="date" name="dob" placeholder="Date of Birth" required>
+                    </div>
+                </div>
+                <div class="card col m-4">
+                    <div class="card-header bg-info">
+                        <h5>Car Information</h5>
+                    </div>
+                    <div class="card-body">
+                        <input class="mb-2 bg-light col" type="number" name="carYr" placeholder="Car Year" min="1900" max="@ViewBag.maxCarYear" required>
+                        <input class="mb-2 bg-light col" type="text" name="carMk" placeholder="Car Make" required>
+                        <input class="bg-light col" type="text" name="carMl" placeholder="Car Model" required>
+                    </div>
+                </div>
+                <div class="card col m-4">
+                    <div class="card-header bg-info">
+                        <h5>Driving History</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="mb-0 col">Have you ever had a DUI?</p>
+                        <div class="text-black-50 col">
+                            <input class="mt-0" type="radio" name="dui" value="1" required>Yes
+                            <input class="mb-2" type="radio" name="dui" value="0">No
+                        </div>
+                        <p class="mb-0 col">How many speeding tickets have you had?</p>
+                        <input class="mb-2 bg-light col" type="number" name="speedTx" placeholder="(0 or greater)" min="0" required>
+                        <p class="mb-0 col">What kind of coverage would you like?</p>
+                        <div class="text-black-50 col">
+                            <input type="radio" name="covType" value="Full" required>Full
+                            <input type="radio" name="covType" value="Liability">Liability
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+                <button class="btn btn-block btn-info" type="submit">Click HERE to get your quote!</button>
+                <div class="text-light text-lg-center d-block">Your quote amounts to $@ViewBag.QuoteAmount</div>
+            </div>
+        </div>
+
+    </div>
+}

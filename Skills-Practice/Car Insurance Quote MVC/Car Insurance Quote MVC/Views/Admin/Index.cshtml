@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+@using Car_Insurance_Quote_MVC.ViewModels
+@model List<QuoteVm>
+
+<div class="row no-gutters">
+    <div class="card col-12 mx-auto shadow">
+        <div class="card-header text-center bg-info">
+            <h5 class="m-0">Quotes</h5>
+        </div>
+        <div class="card-body">
+
+            @foreach (var quote in Model)
+            {
+                <input type="hidden" name="Id" value="@quote.Id" />
+                <div class="row mb-3">
+                    <div class="col-3">
+                        @quote.FirstName
+                    </div>
+                    <div class="col-3">
+                        @quote.LastName
+                    </div>
+                    <div class="col-4">
+                        @quote.Email
+                    </div>
+                    <div class="col-2">
+                        @Math.Round((double)quote.QuoteAmount, 2)
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>

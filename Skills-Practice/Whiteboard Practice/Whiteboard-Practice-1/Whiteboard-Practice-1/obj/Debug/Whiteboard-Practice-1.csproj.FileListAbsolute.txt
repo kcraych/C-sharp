@@ -1,0 +1,7 @@
+C:\Users\kcray\source\repos\kcraych\Job-Placement\Whiteboard Practice\Whiteboard-Practice-1\Whiteboard-Practice-1\bin\Debug\Whiteboard-Practice-1.exe.config
+C:\Users\kcray\source\repos\kcraych\Job-Placement\Whiteboard Practice\Whiteboard-Practice-1\Whiteboard-Practice-1\bin\Debug\Whiteboard-Practice-1.exe
+C:\Users\kcray\source\repos\kcraych\Job-Placement\Whiteboard Practice\Whiteboard-Practice-1\Whiteboard-Practice-1\bin\Debug\Whiteboard-Practice-1.pdb
+C:\Users\kcray\source\repos\kcraych\Job-Placement\Whiteboard Practice\Whiteboard-Practice-1\Whiteboard-Practice-1\obj\Debug\Whiteboard-Practice-1.csprojAssemblyReference.cache
+C:\Users\kcray\source\repos\kcraych\Job-Placement\Whiteboard Practice\Whiteboard-Practice-1\Whiteboard-Practice-1\obj\Debug\Whiteboard-Practice-1.csproj.CoreCompileInputs.cache
+C:\Users\kcray\source\repos\kcraych\Job-Placement\Whiteboard Practice\Whiteboard-Practice-1\Whiteboard-Practice-1\obj\Debug\Whiteboard-Practice-1.exe
+C:\Users\kcray\source\repos\kcraych\Job-Placement\Whiteboard Practice\Whiteboard-Practice-1\Whiteboard-Practice-1\obj\Debug\Whiteboard-Practice-1.pdb
